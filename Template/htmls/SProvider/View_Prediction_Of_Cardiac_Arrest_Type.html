@@ -1,0 +1,110 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style12 {color: #FFFF00; font-weight: bold; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p align="center" class="text-uppercase pull-center style1">View Detection of Cardiac Arrest in Newborn Babies Details  !!! </p>
+                            <hr>
+                            <div class="tweettext">
+                               <table width="739" border="5" align="center" bordercolor="#FF00FF">
+                               <tr>
+
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Fid</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Age_In_Days</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Sex</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">ChestPainType</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">RestingBP--Heart Rate</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">RestingECG</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">MaxHR</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">ExerciseAngina</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Oldpeak</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">ST_Slope</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">slp</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">caa</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">thall</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Prediction</span></div></td>
+
+                      </tr>
+                            {% for object in list_objects %}
+                      <tr>
+
+                          <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Fid}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Age_In_Days}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Sex}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.ChestPainType}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.RestingBP}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.RestingECG}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.MaxHR}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.ExerciseAngina}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Oldpeak}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.ST_Slope}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.slp}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.caa}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.thall}}</div></td>
+ <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Prediction}}</div></td>
+
+
+
+                        </tr>
+
+                                        {% endfor %}
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

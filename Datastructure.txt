@@ -1,0 +1,35 @@
+A Machine Learning Approach Using Statistical Models for Early Detection of Cardiac Arrest in Newborn Babies in the Cardiac Intensive Care Unit
+
+
+IEEE Transaction on Machine Learning,Volume:11,Issue Date:21.June.2023
+
+Cardiac arrest, newborn, early detection, intensive care unit, statistical modeling.
+
+A_Machine_Learning_Approach_Using_Statistical_Models
+
+
+a_machine_learning_approach_using_statistical_models
+
+
+
+cardiac_arrest_prediction
+
+
+Fid	
+Age_In_Days	
+Sex	
+ChestPainType	
+RestingBP	
+RestingECG	
+MaxHR	
+ExerciseAngina	
+Oldpeak	
+ST_Slope	
+oldpeak	
+slp	
+caa	
+thall	
+Prediction
+
+
+
