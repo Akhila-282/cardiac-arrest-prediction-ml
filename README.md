@@ -6,6 +6,14 @@ This project focuses on the **early detection of cardiac arrest risk in newborn 
 Using **Machine Learning algorithms** combined with **statistical models**, the system analyzes newborns’ vital signs and medical records to predict the likelihood of cardiac arrest, enabling early intervention and improved outcomes.  
 
 ---
+## 🎓 Project Context  
+This repository contains my **Final Year Project** in Computer Science Engineering.  
+The project demonstrates how **Machine Learning and Statistical Models** can be applied in healthcare to:  
+- Predict cardiac arrest risks in newborns.  
+- Provide doctors with early alerts.  
+- Reduce response time and improve patient outcomes.  
+
+---
 
 ## 🎯 Objectives  
 - Develop a predictive model for early detection of cardiac arrest in newborns.  
